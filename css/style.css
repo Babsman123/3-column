@@ -1,0 +1,102 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  height: 100%; }
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  padding: 1rem; }
+
+.heading-primary {
+  font-size: 2rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2.5rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 5rem; }
+
+.btn:link, .btn:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1.2rem 2.5rem;
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: all .2s;
+  display: inline-block;
+  animation: moveInBottom .3s ease-out; }
+
+.btn--orange {
+  color: #e38826; }
+
+.btn--cyan {
+  color: #006970; }
+
+.btn--dark-cyan {
+  color: #004241; }
+
+.col-1-of-3 .bg-col-1 {
+  background-color: #e38826;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem; }
+
+.col-1-of-3 .bg-col-2 {
+  background-color: #006970; }
+
+.col-1-of-3 .bg-col-3 {
+  background-color: #004241;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem; }
+
+@media (max-width: 425px) {
+  .col-1-of-3 .bg-col-1 {
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem; }
+  .col-1-of-3 .bg-col-3 {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem; } }
+
+.features-box {
+  padding: 5rem;
+  text-align: left;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.75);
+  transition: transform .3s; }
+  .features-box__img {
+    width: 35%; }
+  .features-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0 1.5rem 4rem rgba(242, 242, 242, 0.15); }
+
+.row {
+  max-width: 114rem;
+  margin: 10rem auto;
+  content: "";
+  display: table;
+  clear: both; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2* 0rem) / 3);
+    float: left; }
+
+@media (max-width: 425px) {
+  .row .col-1-of-3 {
+    width: 100%; } }

@@ -1,0 +1,20 @@
+.row{
+    max-width: $grid-row;
+    margin: 10rem auto;
+
+    @include clearFix;
+
+    .col-1-of-3{
+        width: calc((100% - 2* #{$gutter-horizontal}) / 3);
+        float: left;
+
+    }
+}
+
+@media (max-width: 425px){
+    .row{
+        .col-1-of-3{
+            width: 100%;
+        }
+    }
+}

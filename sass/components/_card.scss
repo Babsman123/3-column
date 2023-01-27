@@ -1,0 +1,29 @@
+ .col-1-of-3{
+    
+     .bg-col-1{
+         background-color: $color-orange-bg;
+         border-top-left-radius: 1rem;
+           border-bottom-left-radius: 1rem;
+    }
+     .bg-col-2{
+         background-color: $color-cyan-bg;
+     }
+     .bg-col-3{
+         background-color: $color-dark-cyan-bg;
+         border-top-right-radius: 1rem;
+         border-bottom-right-radius: 1rem;
+     }
+}
+@media(max-width: 425px){
+    .col-1-of-3{
+    
+        .bg-col-1{
+            border-top-left-radius: 0rem;
+            border-bottom-left-radius: 0rem;
+       }
+        .bg-col-3{
+            border-top-right-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+        }
+   }
+}

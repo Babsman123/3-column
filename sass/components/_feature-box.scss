@@ -1,0 +1,17 @@
+.features-box{
+    padding: 5rem;
+    text-align: left;
+    font-size: 1.4rem;
+    color: $color-text-light-gray;
+    transition: transform .3s;
+
+    &__img{
+        width: 35%;
+
+    }
+    
+    &:hover{
+        transform: translateY(-1.5rem) scale(1.03);
+        box-shadow: 0 1.5rem 4rem rgba($color-text-white, .15);
+    }
+}

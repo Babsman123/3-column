@@ -1,0 +1,24 @@
+.btn{
+    &:link,
+    &:visited{
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 1.2rem 2.5rem;
+        border-radius: 5rem;
+        background-color: $color-text-light-gray;
+        transition: all .2s;
+        display: inline-block;
+
+        animation: moveInBottom .3s ease-out;
+
+    }
+    &--orange{
+        color: $color-orange-bg;
+    }
+    &--cyan{
+        color: $color-cyan-bg;
+    }
+    &--dark-cyan{
+        color: $color-dark-cyan-bg;
+    }
+}
